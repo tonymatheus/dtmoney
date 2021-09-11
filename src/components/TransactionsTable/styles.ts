@@ -23,13 +23,14 @@ export const Container = styled.div`
       background: var(--shape);
       color: var(--text-body);
       border-radius: 0.25rem;
+      height: 4rem; /** caso quebre  algo apagar */
 
       &:first-child {
-          color: var(--text-title)
+        color: var(--text-title);
       }
 
-      &.deposit{
-          color: var(--green);
+      &.deposit {
+        color: var(--green);
       }
     }
   }
