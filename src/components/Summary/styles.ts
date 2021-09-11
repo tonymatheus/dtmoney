@@ -13,6 +13,11 @@ export const Container = styled.div`
     padding: 1.5rem 2rem;
     border-radius: 0.28rem;
     color: var(--text-title);
+    transition: 0.40s;
+
+    &:hover {
+      box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+    }
   }
 
   header {
