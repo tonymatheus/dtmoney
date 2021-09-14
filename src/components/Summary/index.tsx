@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "./styles";
-import entradas from "../../assets/Entradas.svg";
-import saidas from "../../assets/Saidas.svg";
+import entradas from "../../assets/Entrada.svg";
+import saidas from "../../assets/Saida.svg";
 import total from "../../assets/Total.svg";
 
 export const Summary = () => {
