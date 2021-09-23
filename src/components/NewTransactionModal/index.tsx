@@ -4,6 +4,7 @@ import CloseImg from "../../assets/close.svg";
 import IncomeImage from "../../assets/Entrada.svg";
 import OutComeImage from "../../assets/Saida.svg";
 import Modal from "react-modal";
+import { api } from "../../services/api";
 
 interface NewTransactionModalProps {
   isOpen: boolean;
@@ -22,12 +23,18 @@ export const NewTRansactionModal = ({
   function handleCreateNewTransaction(e: FormEvent) {
     e.preventDefault();
 
-    console.log({
+    const data = {
       category,
       title,
       value,
       type,
-    });
+    };
+
+    api.post("/transactions", data);
+
+    setTitle("");
+    setValue(0);
+    setCategory("");
   }
 
   return (
@@ -54,7 +61,7 @@ export const NewTRansactionModal = ({
           onChange={(e) => setTitle(e.target.value)}
         />
         <input
-          type="number"
+          type="text"
           placeholder="Valor"
           value={value}
           onChange={(e) => setValue(Number(e.target.value))}
