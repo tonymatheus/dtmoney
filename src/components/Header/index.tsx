@@ -4,15 +4,15 @@ import Modal from "react-modal";
 import { Container, Content } from "./styles";
 
 interface HeaderProps {
-  onOpenNewTRansactionModal: () => void;
+  onOpenNewTransactionModal: () => void;
 }
 
-export const Header = ({ onOpenNewTRansactionModal }: HeaderProps) => {
+export const Header = ({ onOpenNewTransactionModal }: HeaderProps) => {
   return (
     <Container>
       <Content>
         <img src={logo} alt="dt-money" />
-        <button onClick={() => onOpenNewTRansactionModal()}>
+        <button onClick={() => onOpenNewTransactionModal()}>
           nova transação
         </button>
       </Content>
