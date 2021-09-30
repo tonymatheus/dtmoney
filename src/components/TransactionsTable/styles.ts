@@ -32,6 +32,9 @@ export const Container = styled.div`
       &.deposit {
         color: var(--green);
       }
+      &.withdrow {
+        color: var(--red);
+      }
     }
   }
 `;
