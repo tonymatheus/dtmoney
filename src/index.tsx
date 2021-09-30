@@ -31,6 +31,14 @@ createServer({
           amount: 1500,
           createdAt: new Date("2021-02-29 09:00:00"),
         },
+        {
+          id: 3,
+          title: "Aluguel Apartamento",
+          type: "entrada",
+          category: "contas casa",
+          amount: 150,
+          createdAt: new Date("2021-02-29 09:00:00"),
+        },
       ],
     });
   },
